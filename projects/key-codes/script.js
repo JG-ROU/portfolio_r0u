@@ -1,35 +1,31 @@
 const container = document.getElementById("keyContainer");
+const mobileInput = document.getElementById("mobileInput");
 
-container.innerHTML = generateHTML("-","-","-")
-
-window.addEventListener("keydown", (e) =>{
-
-    container.innerHTML = generateHTML(e.key,e.code,e.key.charCodeAt(0));
-
-});
-
-function generateHTML(key,code,keyCode){
-
+// Función para generar el contenido dinámico
+function generateHTML(key, code, keyCode) {
     return `
-    <div class="key-container">
-      <h4>Key</h4>
-      <div class="key-content">${key === " " ? "Space" : key}
-      </div>
-    </div>
+        <h4 class="animation">Key</h4>
+        <div class="key-content animation">${key === " " ? "Space" : key}</div>
 
-    <div class="key-container">
-      <h4>Code</h4>
-      <div class="key-content">${code}
-      </div>
-    </div>
+        <h4 class="animation">Code</h4>
+        <div class="key-content animation">${code}</div>
 
-    <div class="key-container">
-      <h4>Key Code</h4>
-      <div class="key-content">${keyCode}
-      </div>
-    </div>
-
+        <h4 class="animation">Key Code</h4>
+        <div class="key-content animation">${keyCode}</div>
     `;
-
 }
 
+// Inicializa con valores predeterminados
+container.innerHTML = generateHTML("-", "-", "-");
+
+// Detecta teclas en escritorio
+window.addEventListener("keydown", (e) => {
+    container.innerHTML = generateHTML(e.key, e.code, e.key.charCodeAt(0));
+});
+
+// Detecta teclas en móviles usando el campo de entrada
+mobileInput.addEventListener("input", (e) => {
+    const key = e.target.value.slice(-1); // Último carácter ingresado
+    container.innerHTML = generateHTML(key, key, key.charCodeAt(0));
+    e.target.value = ""; // Limpia el campo de entrada
+});
