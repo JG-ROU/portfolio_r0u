@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portafolio</title>
+  <link href="css/tailwind.css" rel="stylesheet"> <!-- Si usas Tailwind -->
+  <link rel="stylesheet" href="css/styles.css"> <!-- Estilos personalizados -->
+</head>
+
+<body class="bg-gray-100 font-sans leading-relaxed">
+
+  <!-- Header -->
+  <header class="bg-blue-600 text-white p-6">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-3xl font-bold">Jorge Gutierrez (r0u)</h1>
+      <nav>
+        <a href="#about" class="px-4">Sobre mí</a>
+        <a href="#projects" class="px-4">Proyectos</a>
+        <a href="#skills" class="px-4">Habilidades</a>
+        <a href="#contact" class="px-4">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sobre mí -->
+  <section id="about" class="py-16 bg-white">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-semibold text-blue-600">Sobre mí</h2>
+      <p class="mt-4 text-lg text-gray-700">Soy un desarrollador web con experiencia en HTML, CSS, JavaScript y frameworks modernos como React y Next.js...</p>
+    </div>
+  </section>
+
+  <!-- Proyectos -->
+  <section id="projects" class="py-16 bg-gray-50">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-semibold text-blue-600">Proyectos</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+        <div class="project-card">
+          <h3 class="text-xl font-semibold text-blue-600">Proyecto 1</h3>
+          <p class="mt-4 text-gray-700">Descripción breve del proyecto...</p>
+          <a href="https://github.com/JG-ROU/proyecto1" target="_blank" class="text-blue-600 mt-4 inline-block">Ver en GitHub</a>
+        </div>
+        <!-- Otros proyectos... -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-600 text-white py-4 text-center">
+    <p>&copy; 2024 r0u. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/main.js"></script> <!-- Si tienes JS adicional -->
+</body>
+
+</html>

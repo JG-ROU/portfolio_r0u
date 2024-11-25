@@ -1,0 +1,103 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Header */
+  header {
+    padding: 20px 0;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: rgb(46, 99, 177);
+    margin: 0 15px;
+    font-size: 1.2rem;
+  }
+  
+  nav a:hover {
+    color: #ffcd02;
+  }
+  
+  /* Sección Sobre mí */
+  #about {
+    padding: 40px 0;
+    background-color: white;
+  }
+  
+  #about h2 {
+    font-size: 2.5rem;
+    color: #1d4ed8;
+  }
+  
+  #about p {
+    font-size: 1.1rem;
+    color: #4b5563;
+  }
+  
+  /* Proyectos */
+  .project-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .project-card h3 {
+    color: #1d4ed8;
+    font-size: 1.5rem;
+  }
+  
+  .project-card p {
+    color: #4b5563;
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  .project-card a {
+    color: #1d4ed8;
+    font-weight: bold;
+    margin-top: 10px;
+    display: inline-block;
+  }
+  
+  /* Habilidades */
+  .skill-badge {
+    background-color: #e0f2fe;
+    color: #1d4ed8;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    margin: 5px;
+  }
+  
+  .skill-badge:hover {
+    background-color: #1d4ed8;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 10px;
+  }
+  
